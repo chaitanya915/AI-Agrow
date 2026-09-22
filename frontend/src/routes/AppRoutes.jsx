@@ -10,6 +10,7 @@ import { OtpPage } from '../pages/OtpPage';
 import { DashboardPage } from '../pages/DashboardPage';
 import { FarmerInputPage } from '../pages/FarmerInputPage';
 import { ProductRecommendationPage } from '../pages/ProductRecommendationPage';
+import { DemandPredictionPage } from '../pages/DemandPredictionPage';
 import { PlaceholderPage } from '../pages/PlaceholderPage';
 
 export const AppRoutes = () => {
@@ -30,7 +31,7 @@ export const AppRoutes = () => {
           <Route path="dashboard" element={<DashboardPage />} />
           <Route path="farmer-input" element={<FarmerInputPage />} />
           <Route path="recommendation" element={<ProductRecommendationPage />} />
-          <Route path="demand-prediction" element={<PlaceholderPage title="XGBoost Demand Forecasting" />} />
+          <Route path="demand-prediction" element={<DemandPredictionPage />} />
           <Route path="price-prediction" element={<PlaceholderPage title="LSTM Price Prediction Engine" />} />
           <Route path="supplier-recommendation" element={<PlaceholderPage title="Weighted Supplier Scoring" />} />
           <Route path="profitability-analysis" element={<PlaceholderPage title="Financial Profitability Engine" />} />
