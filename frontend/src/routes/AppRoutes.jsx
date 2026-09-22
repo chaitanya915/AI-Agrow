@@ -14,6 +14,7 @@ import { DemandPredictionPage } from '../pages/DemandPredictionPage';
 import { PricePredictionPage } from '../pages/PricePredictionPage';
 import { SupplierRecommendationPage } from '../pages/SupplierRecommendationPage';
 import { ProfitabilityAnalysisPage } from '../pages/ProfitabilityAnalysisPage';
+import { MarketIntelligencePage } from '../pages/MarketIntelligencePage';
 import { PlaceholderPage } from '../pages/PlaceholderPage';
 
 export const AppRoutes = () => {
@@ -38,7 +39,7 @@ export const AppRoutes = () => {
           <Route path="price-prediction" element={<PricePredictionPage />} />
           <Route path="supplier-recommendation" element={<SupplierRecommendationPage />} />
           <Route path="profitability-analysis" element={<ProfitabilityAnalysisPage />} />
-          <Route path="market-intelligence" element={<PlaceholderPage title="TOPSIS Market Analytics" />} />
+          <Route path="market-intelligence" element={<MarketIntelligencePage />} />
           <Route path="reports" element={<PlaceholderPage title="PDF Business Report Generator" />} />
           <Route path="profile" element={<PlaceholderPage title="Farmer Profile & Settings" />} />
           <Route path="admin" element={<PlaceholderPage title="Admin Control Center" />} />
