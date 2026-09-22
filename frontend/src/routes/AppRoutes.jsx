@@ -1,6 +1,7 @@
 import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { RootLayout } from '../layouts/RootLayout';
+import { WelcomePage } from '../pages/WelcomePage';
 import { PlaceholderPage } from '../pages/PlaceholderPage';
 
 export const AppRoutes = () => {
@@ -8,7 +9,7 @@ export const AppRoutes = () => {
     <Routes>
       <Route path="/" element={<RootLayout />}>
         {/* Public Routes */}
-        <Route index element={<PlaceholderPage title="Welcome to AI Agrow" />} />
+        <Route index element={<WelcomePage />} />
         <Route path="login" element={<PlaceholderPage title="Farmer & Partner Login" />} />
         <Route path="register" element={<PlaceholderPage title="Register Account" />} />
         <Route path="forgot-password" element={<PlaceholderPage title="Reset Password" />} />
