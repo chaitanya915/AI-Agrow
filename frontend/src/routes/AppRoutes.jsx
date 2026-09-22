@@ -8,6 +8,7 @@ import { RegisterPage } from '../pages/RegisterPage';
 import { ForgotPasswordPage } from '../pages/ForgotPasswordPage';
 import { OtpPage } from '../pages/OtpPage';
 import { DashboardPage } from '../pages/DashboardPage';
+import { FarmerInputPage } from '../pages/FarmerInputPage';
 import { PlaceholderPage } from '../pages/PlaceholderPage';
 
 export const AppRoutes = () => {
@@ -26,7 +27,7 @@ export const AppRoutes = () => {
         {/* Authenticated Dashboard Layout Shell */}
         <Route element={<DashboardLayout />}>
           <Route path="dashboard" element={<DashboardPage />} />
-          <Route path="farmer-input" element={<PlaceholderPage title="Farmer Details Input Form" />} />
+          <Route path="farmer-input" element={<FarmerInputPage />} />
           <Route path="recommendation" element={<PlaceholderPage title="Hybrid Product Recommendation" />} />
           <Route path="demand-prediction" element={<PlaceholderPage title="XGBoost Demand Forecasting" />} />
           <Route path="price-prediction" element={<PlaceholderPage title="LSTM Price Prediction Engine" />} />
