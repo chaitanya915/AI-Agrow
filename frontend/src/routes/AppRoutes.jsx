@@ -16,6 +16,7 @@ import { SupplierRecommendationPage } from '../pages/SupplierRecommendationPage'
 import { ProfitabilityAnalysisPage } from '../pages/ProfitabilityAnalysisPage';
 import { MarketIntelligencePage } from '../pages/MarketIntelligencePage';
 import { ReportsPage } from '../pages/ReportsPage';
+import { ProfilePage } from '../pages/ProfilePage';
 import { PlaceholderPage } from '../pages/PlaceholderPage';
 
 export const AppRoutes = () => {
@@ -42,7 +43,7 @@ export const AppRoutes = () => {
           <Route path="profitability-analysis" element={<ProfitabilityAnalysisPage />} />
           <Route path="market-intelligence" element={<MarketIntelligencePage />} />
           <Route path="reports" element={<ReportsPage />} />
-          <Route path="profile" element={<PlaceholderPage title="Farmer Profile & Settings" />} />
+          <Route path="profile" element={<ProfilePage />} />
           <Route path="admin" element={<PlaceholderPage title="Admin Control Center" />} />
         </Route>
 
