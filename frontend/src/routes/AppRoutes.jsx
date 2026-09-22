@@ -2,18 +2,24 @@ import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { RootLayout } from '../layouts/RootLayout';
 import { WelcomePage } from '../pages/WelcomePage';
+import { LoginPage } from '../pages/LoginPage';
+import { RegisterPage } from '../pages/RegisterPage';
+import { ForgotPasswordPage } from '../pages/ForgotPasswordPage';
+import { OtpPage } from '../pages/OtpPage';
 import { PlaceholderPage } from '../pages/PlaceholderPage';
 
 export const AppRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<RootLayout />}>
-        {/* Public Routes */}
+        {/* Public Landing Page */}
         <Route index element={<WelcomePage />} />
-        <Route path="login" element={<PlaceholderPage title="Farmer & Partner Login" />} />
-        <Route path="register" element={<PlaceholderPage title="Register Account" />} />
-        <Route path="forgot-password" element={<PlaceholderPage title="Reset Password" />} />
-        <Route path="otp-verification" element={<PlaceholderPage title="OTP Verification" />} />
+        
+        {/* Authentication Pages */}
+        <Route path="login" element={<LoginPage />} />
+        <Route path="register" element={<RegisterPage />} />
+        <Route path="forgot-password" element={<ForgotPasswordPage />} />
+        <Route path="otp-verification" element={<OtpPage />} />
 
         {/* Dashboard Routes */}
         <Route path="dashboard" element={<PlaceholderPage title="Executive Business Dashboard" />} />
