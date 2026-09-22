@@ -17,7 +17,7 @@ import { ProfitabilityAnalysisPage } from '../pages/ProfitabilityAnalysisPage';
 import { MarketIntelligencePage } from '../pages/MarketIntelligencePage';
 import { ReportsPage } from '../pages/ReportsPage';
 import { ProfilePage } from '../pages/ProfilePage';
-import { PlaceholderPage } from '../pages/PlaceholderPage';
+import { AdminPage } from '../pages/AdminPage';
 
 export const AppRoutes = () => {
   return (
@@ -44,7 +44,7 @@ export const AppRoutes = () => {
           <Route path="market-intelligence" element={<MarketIntelligencePage />} />
           <Route path="reports" element={<ReportsPage />} />
           <Route path="profile" element={<ProfilePage />} />
-          <Route path="admin" element={<PlaceholderPage title="Admin Control Center" />} />
+          <Route path="admin" element={<AdminPage />} />
         </Route>
 
         {/* Catch-all Fallback */}
